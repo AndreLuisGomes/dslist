@@ -62,11 +62,11 @@ public class Game {
         this.title = title;
     }
 
-    public Integer getYer() {
+    public Integer getYear() {
         return year;
     }
 
-    public void setYer(Integer yer) {
+    public void setYear(Integer yer) {
         this.year = yer;
     }
 
