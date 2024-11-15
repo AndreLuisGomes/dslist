@@ -23,13 +23,6 @@ public class GameService {
         return result.stream().map(x -> new GameMinDTO(x)).toList();
     }
 
-    @Transactional
-    public GameDTO findByName(String name){
-        Game result = gameRepository.findByName(name);
-        return new GameDTO(result);
-    }
-
-
     @Transactional(readOnly = true)
     public GameDTO findById(Long id){
         Game result = gameRepository.findById(id).get();
